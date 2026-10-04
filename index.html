@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#05070d">
+  <title>ReGadget — Jual • Beli • Tukar Tambah • Rakit HP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-progress" id="progress"></div>
+
+  <header class="topbar">
+    <button class="brand" data-go="0" aria-label="Beranda ReGadget">
+      <img src="assets/regadget-round.png" alt="Logo ReGadget">
+      <span><b>ReGadget</b><small>Jual • Beli • Tukar Tambah • Rakit</small></span>
+    </button>
+    <nav>
+      <button data-go="1">Rakit HP</button>
+      <button data-go="2">Jual Beli</button>
+      <button data-go="3">Penutup</button>
+    </nav>
+  </header>
+
+  <main class="slider" id="slider">
+    <!-- 01 WELCOME -->
+    <section class="slide welcome" data-slide="0">
+      <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+      <div class="welcome-inner">
+        <div class="round-logo">
+          <img src="assets/regadget-round.png" alt="ReGadget">
+        </div>
+        <p class="eyebrow">JUAL • BELI • TUKAR TAMBAH • RAKIT HP</p>
+        <h1>Welcome to website <span>ReGadget</span></h1>
+        <p class="lead">Solusi gadget second, rakit HP dari nol, dan part dengan budget yang bisa disesuaikan.</p>
+        <button class="cta" data-go="1">Mulai Jelajah <span>→</span></button>
+        <p class="swipe-hint">Geser ke kanan untuk masuk ke pricelist <span>→</span></p>
+      </div>
+    </section>
+
+    <!-- 02 RAKIT -->
+    <section class="slide" data-slide="1">
+      <div class="page">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">01 • OPEN JASA RAKIT</p>
+            <h2>Rakit HP dari <span>0</span></h2>
+            <p>Contoh perakitan <b>Realme C2</b>. Pilih kualitas part sesuai kebutuhan dan budget.</p>
+          </div>
+          <div class="slide-badge">← Geser untuk lanjut →</div>
+        </div>
+
+        <div class="rakit-layout">
+          <div class="poster-card">
+            <img src="assets/realme-c2-pricelist.png" alt="Pricelist part Realme C2">
+            <div class="caption">Contoh unit: Realme C2 •</div>
+          </div>
+
+          <div class="calculator">
+            <div class="calc-title"><b>Budget Builder</b><span>Total otomatis</span></div>
+
+            <label for="lcd">LCD</label>
+            <select id="lcd">
+              <option value="75000">Low — Rp70.000–80.000</option>
+              <option value="95000">Medium — Rp90.000–100.000</option>
+              <option value="130000">High — Rp100.000–160.000</option>
+            </select>
+
+            <label for="mesin">Mesin HP</label>
+            <select id="mesin">
+              <option value="150000">Rp150.000(mesin only)</option>
+              <option value="200000">Rp200.000(Bisa jadi bonus unit)</option>
+            </select>
+
+            <label for="battery">Baterai</label>
+            <select id="battery">
+              <option value="50000">Rp50.000</option>
+              <option value="60000">Rp60.000</option>
+              <option value="70000">Rp70.000</option>
+            </select>
+
+            <label for="charge">Board Casan</label>
+            <select id="charge">
+              <option value="20000">Rp20.000</option>
+              <option value="25000">Rp25.000</option>
+              <option value="35000">Rp35.000</option>
+            </select>
+
+            <label for="labor">Jasa Rakit</label>
+            <select id="labor">
+              <option value="30000">Mudah — Rp30.000</option>
+              <option value="50000">Sedang — Rp50.000</option>
+              <option value="70000">Susah — Rp70.000</option>
+            </select>
+
+            <div class="total"><span>Estimasi total</span><strong id="total">Rp175.000</strong></div>
+            <p class="hint">Harga adalah estimasi.dapat berubah mengikuti stok/kondisi part.</p>
+          </div>
+        </div>
+
+        <div class="part-list">
+          <article><b>LCD</b><span>Low Rp70–80K</span><span>Medium Rp90–100K</span><span>High Rp100–160K</span></article>
+          <article><b>Mesin HP</b><span>Rp100–200K</span><em>Bisa jadi bonus unit</em></article>
+          <article><b>Baterai</b><span>Rp50–70K</span></article>
+          <article><b>Board Casan</b><span>Rp20–35K</span></article>
+          <article><b>Jasa Rakit</b><span>Mudah Rp30K</span><span>Sedang Rp50K</span><span>Susah Rp70K</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 JUAL BELI -->
+    <section class="slide" data-slide="2">
+      <div class="page">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">02 • JUAL BELI HP</p>
+            <h2>Pricelist HP <span>pilihan</span></h2>
+            <p>Harga hanya contoh untuk bazar sekolah. Spesifikasi diringkas dari GSMArena.</p>
+          </div>
+          <div class="slide-badge">← Geser untuk penutup →</div>
+        </div>
+        <div class="phone-grid" id="phoneGrid"></div>
+      </div>
+    </section>
+
+    <!-- 04 PENUTUP -->
+    <section class="slide closing" data-slide="3">
+      <div class="closing-inner">
+        <div class="round-logo large"><img src="assets/regadget-round.png" alt="ReGadget"></div>
+        <p class="eyebrow">REGADGET • SCHOOL BAZAAR</p>
+        <h2>Terima kasih telah<br><span>mengunjungi ReGadget!</span></h2>
+        <p>Semoga kamu menemukan gadget, part, atau jasa rakit yang sesuai kebutuhan dan budget.</p>
+        <button class="cta" data-go="0">Kembali ke Awal ↺</button>
+        <small>ReGadget • Jual • Beli • Tukar Tambah • Rakit HP</small>
+      </div>
+    </section>
+  </main>
+
+  <div class="slider-controls">
+    <button id="prev" aria-label="Slide sebelumnya">←</button>
+    <div id="dots"></div>
+    <button id="next" aria-label="Slide berikutnya">→</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
